@@ -25,34 +25,57 @@
             margin: 0;
         }
 
-        .header{
+        .header {
             height: 70px;
         }
 
-        /* navbar  */
-        .nav-bar{
-            /* height: 80px; */
-            letter-spacing: 2px;
+        .header>.link-area>i {
+            width: 32px;
+            height: 32px;
+
+
+
         }
 
-        .span.nav-link{
-            color: white!important;;
+        .link-area {
+            margin-right: 10px;
         }
-        .nav-link{
-            color: rgb(232, 230, 230)!important;
+
+        .header>.link-area a {
+            margin: 0 0 0 25px;
+            display: flex;
+        }
+
+        /* navbar  */
+        .nav-bar {
+            /* height: 80px; */
+            background-color: transparent;
+            letter-spacing: 2px;
+
+        }
+
+        .span.nav-link {
+            color: white !important;
+            ;
+        }
+
+        .nav-link {
+            color: rgb(232, 230, 230) !important;
             transition: color cubic-bezier(0.19, 1, 0.22, 1) 1s;
         }
-        .nav-link:hover{
-            color: white!important;
+
+        .nav-link:hover {
+            color: white !important;
         }
 
-        .underline{
+        .underline:focus {
             text-decoration-line: underline;
         }
 
-        .bg-blue{
-            background-color:#258eff;
+        .bg-blue {
+            background-color: #258eff;
         }
+
         .dropdown-menu {
             font-size: 1em;
             color: white;
@@ -61,13 +84,13 @@
 
 
 
-        .biketab:first-child{
-            text-shadow:1px 1px black;
+        .biketab.text-shadow {
+            text-shadow: 1px 1px black;
         }
-        
 
 
-        .dropdown:hover{
+
+        .dropdown:hover {
             background-color: #258eff;
         }
 
@@ -78,7 +101,7 @@
         }
 
         .dropdown-item:hover {
-            background-color:  #258eff;
+            background-color: #258eff;
             color: white;
             transition: background-color cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s;
             /* font-size: 1em!important; */
@@ -88,14 +111,16 @@
             background: #000 !important;
         }
 
+
+
         .dropdown-toggle::after {
             content: " ";
             display: none;
             border: none;
         }
 
-        .E-font{
-            font-style:Courier;
+        .E-font {
+            font-style: Courier;
         }
 
 
@@ -105,7 +130,7 @@
             width: 100%;
         }
 
-        
+
 
 
 
@@ -119,8 +144,8 @@
             margin: 0px;
             z-index: 200;
             /* color: red; */
-            background-color:rgba(19, 19, 19, 0.886);
-            
+            background-color: rgba(19, 19, 19, 0.886);
+
             top: 550px;
 
             display: inline-block;
@@ -128,8 +153,8 @@
             vertical-align: middle;
             transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
 
-            
-            
+
+
 
 
 
@@ -137,21 +162,21 @@
 
 
         .arrow i {
-            line-height:40px;
+            line-height: 40px;
 
             /* background: red; */
             color: honeydew;
 
-            
+
 
             font-size: 30px;
 
         }
 
         .arrow.left {
-            
+
             left: 50px;
-            
+
         }
 
         .right {
@@ -163,22 +188,22 @@
         .banner:hover .arrow {
             /* display: inline-block; */
             opacity: 1;
-            
-            
+
+
 
         }
 
-        .banner img{
+        .banner img {
             display: none;
         }
 
 
-        img.active{
+        img.active {
             display: block;
         }
 
 
-        
+
 
 
 
@@ -217,7 +242,21 @@
 
         }
 
-        .carditems.carditems:hover ~ .cardtitle{
+
+        a.text-red {
+            color: red;
+        }
+
+
+
+        .cardtitle a.text-red:hover {
+
+
+            text-decoration: underline solid black;
+
+        }
+
+        .carditems>.cardpic:hover .carditems>.cardtitle {
             text-decoration: underline solid black;
 
         }
@@ -226,9 +265,20 @@
         /* footer */
         .footer {
             border-top: rgb(208, 208, 208) solid 5px;
-            height: 80px;
+            /* height: 70px; */
             background-color: rgb(240, 240, 240);
 
+
+        }
+
+        .footer>.link-area {
+            margin-right: 15px;
+        }
+
+        .link-area>a {
+            display: flex;
+
+            margin: 0 12px;
         }
 
         .goto-top {
@@ -242,9 +292,9 @@
             transition: background-color cubic-bezier(0.165, 0.84, 0.44, 1) 1s;
         }
 
-        .goto-top:hover{
+        .goto-top:hover {
             background-color: rgb(148, 148, 148);
-            
+
 
         }
 
@@ -261,7 +311,7 @@
 
 <body>
     <!-- 主容器 -->
-    <div class="main-container">
+    <div class="main-container position-relative">
         <!-- header -->
         <div class="header d-flex justify-content-between bg-dark">
             <div class="logo">
@@ -269,10 +319,10 @@
 
             </div>
             <div class="link-area d-flex my-auto ">
-                <img src="facebook-icon.png" class="mr-3 ml-2" alt="" srcset="">
-                <img src="instagram-icon.png" class="mr-3 ml-2" alt="" srcset="">
-                <img src="youtube-icon2.png" class="mr-3 ml-2" alt="" srcset="">
-                <img src="shopee_icon.png" class="mr-3 ml-2" alt="" srcset="">
+                <a href="#"><img src="facebook-icon.png" class="" alt="" srcset=""></a>
+                <a href="#"><img src="instagram-icon.png" class="" alt="" srcset=""></a>
+                <a href="#"><img src="youtube-icon2.png" class="" alt="" srcset=""></a>
+                <a href="#"><img src="shopee_icon.png" class="" alt="" srcset=""></a>
 
 
 
@@ -287,7 +337,7 @@
 
             <div class="nav-wrapper collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ">
-                    <li class="biketab nav-item active bg-blue px-2 mr-1 px-2">
+                    <li class="biketab nav-item active bg-blue px-2 mr-1 px-2 text-shadow">
                         <a class="span nav-link " href="#">首頁 <span class="sr-only">(current)</span></a>
                     </li>
 
@@ -296,7 +346,8 @@
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             最新車款
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item py-2 ml-0 pl-2 " href="#">登山車</a>
                             <div class="dropdown-divider p-0 m-0"></div>
                             <a class="dropdown-item py-2 ml-0 pl-2 " href="#">公路車</a>
@@ -308,11 +359,12 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active underline" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             騎士裝備
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">自行車服飾</a>
                             <div class="dropdown-divider p-0 m-0"></div>
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">手套及配件</a>
@@ -332,11 +384,12 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active underline" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             技術支援
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">保固服務</a>
                             <div class="dropdown-divider p-0 m-0"></div>
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">車主註冊</a>
@@ -346,33 +399,34 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active underline" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             活動新聞
                         </a>
 
                     </li>
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active underline" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             經銷門市
                         </a>
 
                     </li>
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active E-font" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle active underline E-font" href="#" id="navbarDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             NO SHORTCUTS
                         </a>
 
                     </li>
 
                     <li class="biketab nav-item dropdown px-2 ">
-                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                        <a class="nav-link dropdown-toggle active underline" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             資訊下載
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0"
+                            aria-labelledby="navbarDropdown">
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">SCOTT 2020中文型錄</a>
                             <div class="dropdown-divider p-0 m-0"></div>
                             <a class="dropdown-item py-2 ml-0 pl-2" href="#">SCOTT 2019中文型錄</a>
@@ -403,7 +457,7 @@
                         <a href="#"><img src="SCOTT_2020_mainbanner_01.jpg" class="w-100 " alt=""></a>
                         <a href="#"><img src="SCOTT_2020_mainbanner_04.jpg" class="w-100" alt=""></a>
                         <a href="#"><img src="SCOTT_2020_mainbanner_05.jpg" class="w-100" alt=""></a>
-                
+
 
 
 
@@ -415,7 +469,7 @@
                     </div>
                     <div class="arrow left position-absolute ">
                         <i class="fa fas fas fas fa-chevron-left  "></i>
-                        
+
                     </div>
 
 
@@ -425,7 +479,7 @@
 
 
 
-                <div class="info-area pb-5">
+                <div class="info-area pt-3 pb-5">
                     <div class="row m-0 no-wrap">
                         <div class="col-4 m-0 ">
                             <img src="foil_470x260_W22017.png" class="w-100" alt="" srcset="">
@@ -440,7 +494,7 @@
                 </div>
 
 
-                <div class="helmets">
+                <div class="helmets pb-4">
                     <div class="row m-0">
                         <img src="helmets-banner.png" class="mx-auto pb-5  " alt="" srcset="">
                     </div>
@@ -448,7 +502,7 @@
 
 
                 <div class="product-area bg-dark">
-                    <div class="container mt-0 p-0 mb-5">
+                    <div class="container mt-0 p-0 mb-1">
                         <div class="row justify-content-center">
                             <div class="mx-auto">
                                 <img src="QB01-MTB.png" alt="" srcset="">
@@ -479,36 +533,18 @@
                 <div class="event-area p-0 pb-3 m-0 d-flex ">
 
 
-                    <div class="carditems d-flex ">
+                    <div class="carditems ">
 
-                        <div class="cardpic">
+                        <div class="cardpic float-left px-2 pt-1">
                             <img src="10489117_1269118738-copy.jpg" class="w-100" alt="" srcset="">
                         </div>
-                        <div class="cardtextwrap d-flex flex-column  p-2">
-                            <div class="cardtitle text-danger">
-                                2020/08/28 荷蘭一姐Annemiek奪下2020歐洲公路冠軍頭銜
-                            </div>
-                            <div class="cardtext text-secondary">
-                                VAN VLEUTEN CONTINUES WINNING WITH STUNNING STRADE BIANCHE VICTORY Sat 01 Aug 2020
-                                現任女子公路世界冠軍Annemiek van Vleuten (安妮米克‧馮‧佛倫坦)
-                                在上週末贏得了她在2020年度的第5場勝利，就在義大利的Siena舉辦的頂尖UCI
-                                World Tour等級賽事Strade Bianche (白沙戰) 中捍衛了她的冠軍頭銜。 這場比賽在炎熱的氣候下舉行，參賽者們要面對的是春...
-                            </div>
 
-                        </div>
-
-
-                    </div>
-
-                    <div class="carditems d-flex">
-                        <div class="cardpic">
-                            <img src="116841398_3353161564735682_2621951223326374588_o.jpg" class="w-100" alt=""
-                                srcset="">
-                        </div>
                         <div class="cardtextwrap d-flex flex-column p-2">
-                            <div class="cardtitle text-danger">
-                                2020/08/01 荷蘭一姐Annemiek贏得Strade Bianche 2020白沙戰女子冠軍
+                            <div class="cardtitle ">
+                                <a href="#" class="text-red ">2020/08/28 荷蘭一姐Annemiek奪下2020歐洲公路冠軍頭銜</a>
                             </div>
+
+
                             <div class="cardtext text-secondary">
                                 VAN VLEUTEN CONTINUES WINNING WITH STUNNING STRADE BIANCHE VICTORY Sat 01 Aug 2020
                                 現任女子公路世界冠軍Annemiek van Vleuten (安妮米克‧馮‧佛倫坦)
@@ -516,45 +552,72 @@
                                 World Tour等級賽事Strade Bianche (白沙戰) 中捍衛了她的冠軍頭銜。 這場比賽在炎熱的氣候下舉行，參賽者們要面對的是春...
                             </div>
 
+
+
+
                         </div>
+
+                        <div class="carditems">
+
+                            <div class="cardpic float-left px-2 pt-1">
+                                <img src="116841398_3353161564735682_2621951223326374588_o.jpg" class="w-100" alt=""
+                                    srcset="">
+                            </div>
+
+
+                            <div class="cardtextwrap d-flex flex-column p-2">
+                                <div class="cardtitle ">
+                                    <div href="#" class="text-red ">2020/08/01 荷蘭一姐Annemiek贏得Strade Bianche 2020白沙戰女子冠軍
+                                    </div>
+                                </div>
+
+                                <div class="cardtext text-secondary">
+                                    VAN VLEUTEN CONTINUES WINNING WITH STUNNING STRADE BIANCHE VICTORY Sat 01 Aug 2020
+                                    現任女子公路世界冠軍Annemiek van Vleuten (安妮米克‧馮‧佛倫坦)
+                                    在上週末贏得了她在2020年度的第5場勝利，就在義大利的Siena舉辦的頂尖UCI
+                                    World Tour等級賽事Strade Bianche (白沙戰) 中捍衛了她的冠軍頭銜。 這場比賽在炎熱的氣候下舉行，參賽者們要面對的是春...
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+
+
 
                     </div>
 
 
+                </div>
+            </div>
 
+            <!-- 頁尾 -->
+            <div class="footer d-flex flex-column bg-grey pb-2  ">
+                <div class="copyright d-flex justify-content-end  text-secondary pt-2 pr-5">
+                    總代理：極鴻股份有限公司 © SCOTT Sports SA. All rights reserved.
+                </div>
+                <div class="link-area d-flex my-auto justify-content-end pr-4 pt-2 mb-2">
+                    <a href="#"><img src="facebook-icon.png" class=" " alt="" srcset=""></a>
+                    <a href="#"><img src="instagram-icon.png" class=" " alt="" srcset=""></a>
+                    <a href="#"><img src="youtube-icon2.png" class=" " alt="" srcset=""></a>
+                    <a href="#"><img src="shopee_icon.png" class=" " alt="" srcset=""></a>
 
 
 
 
                 </div>
 
-
-            </div>
-        </div>
-
-        <!-- 頁尾 -->
-        <div class="footer d-flex flex-column bg-grey pb-5 pb-0 ">
-            <div class="copyright d-flex justify-content-end  text-secondary pt-2 pr-5">
-                總代理：極鴻股份有限公司 © SCOTT Sports SA. All rights reserved.
-            </div>
-            <div class="link-area d-flex my-auto justify-content-end pr-4 pt-2">
-                <img src="facebook-icon.png" class="mr-4" alt="" srcset="">
-                <img src="instagram-icon.png" class="mr-4" alt="" srcset="">
-                <img src="youtube-icon2.png" class="mr-4" alt="" srcset="">
-                <img src="shopee_icon.png" class="mr-4" alt="" srcset="">
-
-
-
-
             </div>
             <div class="goto-top position-fixed fixed-bottom d-flex justify-content-center align-items-center my-auto">
                 Go to top</div>
+
         </div>
 
-    </div>
 
-
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
         crossorigin="anonymous"></script>
@@ -562,9 +625,15 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script> -->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
