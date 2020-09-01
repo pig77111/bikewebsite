@@ -61,14 +61,25 @@
 
 
         .arrow {
-            display: flex;
-            width: 50px;
-            height: 50px;
-            /* color: red; */
-            background-color: green;
+            /* display: none; */
+            opacity: 0;
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+            margin: 0px;
             z-index: 200;
-            top: 50%;
-            transition: display 1s;
+            /* color: red; */
+            background-color:rgba(19, 19, 19, 0.639);
+            
+            top: 550px;
+
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+
+            
+            
 
 
 
@@ -76,28 +87,39 @@
 
 
         .arrow i {
+            line-height:40px;
 
             /* background: red; */
             color: honeydew;
-            /* font-size: 20px; */
+
+            
+
+            font-size: 30px;
 
         }
 
         .arrow.left {
-            left: 30px;
+            
+            left: 50px;
+            
         }
 
-        .arrow.right {
-            background: red;
-            right: 30px;
-            /* color: white; */
+        .right {
+
+            right: 50px;
 
         }
 
-        .imgs::hover .arrow {
-            display: none;
+        .banner:hover .arrow {
+            /* display: inline-block; */
+            opacity: 1;
+            
+            
 
         }
+
+
+        
 
 
 
@@ -238,20 +260,29 @@
             <div class="content-wrapper">
                 <div class="banner pt-2 postion-relative">
                     <div class="imgs w-100 pb-2">
-                        <img src="SCOTT_2020_mainbanner_01.jpg" class="w-100" alt="">
-                        <!-- <img src="" alt=""> -->
-                        <!-- <img src="" alt=""> -->
-                        <!-- <img src="" alt=""> -->
-                        <!-- <img src="" alt=""> -->
+                        <img src="SCOTT_2020_mainbanner_01.jpg" class="w-100 active" alt="">
+                        <img src="SCOTT_2020_mainbanner_02.jpg" class="w-100" alt="">
+                        <img src="SCOTT_2020_mainbanner_03.jpg" class="w-100" alt="">
+                        <img src="SCOTT_2020_mainbanner_04.jpg" class="w-100" alt="">
+                        <img src="SCOTT_2020_mainbanner_05.jpg" class="w-100" alt="">
+                
+
+
+
+
                     </div>
                     <div class="arrow right position-absolute ">
-                        <i class="fa fas fas fa-chevron-left fa-2x "></i>
+                        <i class="fa fas fas fas fa-chevron-right  "></i>
 
                     </div>
                     <div class="arrow left position-absolute ">
-                        <i class="fa fab fa-facebook tzu-ting-5x"></i>
-
+                        <i class="fa fas fas fas fa-chevron-left  "></i>
+                        
                     </div>
+
+
+
+
                 </div>
 
 
