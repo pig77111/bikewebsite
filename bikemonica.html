@@ -26,9 +26,21 @@
         }
 
         /* navbar  */
+        .nav-bar{
+            letter-spacing: 2px;
+        }
         .dropdown-menu {
             font-size: 1em;
             color: white;
+            /* letter-spacing: px; */
+        }
+
+        .dropdown-toggle::after{
+            /* display: none; */
+        }
+
+        .biketab:first-child{
+            text-shadow:1px 1px black;
         }
 
         .dropdown:hover {
@@ -118,6 +130,15 @@
 
         }
 
+        .banner img{
+            display: none;
+        }
+
+
+        img.active{
+            display: block;
+        }
+
 
         
 
@@ -158,10 +179,16 @@
 
         }
 
+        .carditems.carditems:hover ~ .cardtitle{
+            text-decoration: underline solid black;
+
+        }
+
 
         /* footer */
         .footer {
-            border-top: rgb(208, 208, 208) solid 8px;
+            border-top: rgb(208, 208, 208) solid 5px;
+            height: 80px;
             background-color: rgb(240, 240, 240);
 
         }
@@ -169,11 +196,11 @@
         .goto-top {
             width: 80px;
             height: 40px;
-            color: white;
+            color: rgb(209, 209, 209);
             font-size: 1em;
-            background-color: rgb(121, 121, 121);
+            background-color: rgb(96, 96, 96);
             left: 50%;
-            box-shadow: 0px 1px 5px 5px rgba(108, 106, 106, 0.55);
+            box-shadow: 0px 1px 5px 1px rgba(108, 106, 106, 0.55);
         }
 
         .dropdown:hover .dropdown-menu {
@@ -197,10 +224,10 @@
 
             </div>
             <div class="link-area d-flex my-auto ">
-                <img src="facebook-icon.png" class="mx-2" alt="" srcset="">
-                <img src="instagram-icon.png" class="mx-2" alt="" srcset="">
-                <img src="youtube-icon2.png" class="mx-2" alt="" srcset="">
-                <img src="shopee_icon.png" class="mx-2" alt="" srcset="">
+                <img src="facebook-icon.png" class="mr-3 ml-2" alt="" srcset="">
+                <img src="instagram-icon.png" class="mr-3 ml-2" alt="" srcset="">
+                <img src="youtube-icon2.png" class="mr-3 ml-2" alt="" srcset="">
+                <img src="shopee_icon.png" class="mr-3 ml-2" alt="" srcset="">
 
 
 
@@ -210,37 +237,51 @@
 
         <!-- nav bar -->
         <!-- 原class名保留最前面 -->
-        <nav class="nav-bar navbar navbar-expand-lg navbar-dark bg-dark bg-black pl-0">
+        <nav class="nav-bar navbar navbar-expand-lg navbar-dark bg-dark bg-black p-0">
 
 
             <div class="nav-wrapper collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto ">
-                    <li class="biketab nav-item active bg-info px-2">
+                    <li class="biketab nav-item active bg-info px-2 mr-1 px-2">
                         <a class="span nav-link " href="#">首頁 <span class="sr-only">(current)</span></a>
                     </li>
 
-                    <li class="biketab nav-item dropdown">
+                    <li class="biketab nav-item dropdown px-2 ">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             最新車款
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item " href="#">登山車</a>
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item py-2 ml-0 pl-2 " href="#">登山車</a>
                             <div class="dropdown-divider p-0 m-0"></div>
-                            <a class="dropdown-item " href="#">公路車</a>
+                            <a class="dropdown-item py-2 ml-0 pl-2 " href="#">公路車</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2 " href="#">鐵人三項</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
 
 
                         </div>
                     </li>
-                    <li class="biketab nav-item dropdown">
+                    <li class="biketab nav-item dropdown px-2 ">
                         <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             騎士裝備
                         </a>
-                        <div class="dropdown-menu p-0 m-0 bg-secondary" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">自行車服飾</a>
+                        <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">自行車服飾</a>
                             <div class="dropdown-divider p-0 m-0"></div>
-                            <a class="dropdown-item" href="#">手套及配件</a>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">手套及配件</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">自行車眼鏡</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">競賽安全帽</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">自行車鞋</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">Syncros專業級座墊</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
+                            <a class="dropdown-item py-2 ml-0 pl-2" href="#">背包裝備</a>
+                            <div class="dropdown-divider p-0 m-0"></div>
 
 
                         </div>
@@ -260,8 +301,8 @@
             <div class="content-wrapper">
                 <div class="banner pt-2 postion-relative">
                     <div class="imgs w-100 pb-2">
-                        <img src="SCOTT_2020_mainbanner_01.jpg" class="w-100 active" alt="">
-                        <img src="SCOTT_2020_mainbanner_02.jpg" class="w-100" alt="">
+                        <img src="SCOTT_2020_mainbanner_01.jpg" class="w-100 " alt="">
+                        <img src="SCOTT_2020_mainbanner_02.jpg" class="w-100 active" alt="">
                         <img src="SCOTT_2020_mainbanner_03.jpg" class="w-100" alt="">
                         <img src="SCOTT_2020_mainbanner_04.jpg" class="w-100" alt="">
                         <img src="SCOTT_2020_mainbanner_05.jpg" class="w-100" alt="">
@@ -346,7 +387,7 @@
                         <div class="cardpic">
                             <img src="10489117_1269118738-copy.jpg" class="w-100" alt="" srcset="">
                         </div>
-                        <div class="cardtextwrap d-flex flex-column bg-info p-2">
+                        <div class="cardtextwrap d-flex flex-column  p-2">
                             <div class="cardtitle text-danger">
                                 2020/08/28 荷蘭一姐Annemiek奪下2020歐洲公路冠軍頭銜
                             </div>
@@ -367,7 +408,7 @@
                             <img src="116841398_3353161564735682_2621951223326374588_o.jpg" class="w-100" alt=""
                                 srcset="">
                         </div>
-                        <div class="cardtextwrap d-flex flex-column bg-info p-2">
+                        <div class="cardtextwrap d-flex flex-column p-2">
                             <div class="cardtitle text-danger">
                                 2020/08/01 荷蘭一姐Annemiek贏得Strade Bianche 2020白沙戰女子冠軍
                             </div>
@@ -396,14 +437,14 @@
 
         <!-- 頁尾 -->
         <div class="footer d-flex flex-column bg-grey pb-5 pb-0 ">
-            <div class="copyright d-flex justify-content-end pt-2 pl-3">
+            <div class="copyright d-flex justify-content-end  text-secondary pt-2 pr-5">
                 總代理：極鴻股份有限公司 © SCOTT Sports SA. All rights reserved.
             </div>
-            <div class="link-area d-flex my-auto justify-content-end">
-                <img src="facebook-icon.png" class="mx-3" alt="" srcset="">
-                <img src="instagram-icon.png" class="mx-3" alt="" srcset="">
-                <img src="youtube-icon2.png" class="mx-3" alt="" srcset="">
-                <img src="shopee_icon.png" class="mx-3" alt="" srcset="">
+            <div class="link-area d-flex my-auto justify-content-end pr-4 pt-2">
+                <img src="facebook-icon.png" class="mr-4" alt="" srcset="">
+                <img src="instagram-icon.png" class="mr-4" alt="" srcset="">
+                <img src="youtube-icon2.png" class="mr-4" alt="" srcset="">
+                <img src="shopee_icon.png" class="mr-4" alt="" srcset="">
 
 
 
