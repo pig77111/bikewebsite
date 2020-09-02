@@ -17,6 +17,9 @@
     <title>Hello, world!</title>
 
     <style>
+        *{
+            outline: tomato 1px solid;
+        }
 
          /* 共同style  start*/
         body {
@@ -146,148 +149,36 @@
 
         /* 共同style  end*/
 
-
-        /* slide */
-
-        .banner {
+        /* 內頁共通 */
+        .page-banner{
             width: 100%;
+            height: 30%;
+        }
+
+        .page-title{
+            font-size: 2.9em;
+            font-weight: 400;
+
+        }
+
+        .pagewrap{
+            margin: 40px 70px 0 70px;
+        }
+        
+        .pageitem-center{
+            margin-left: auto;
+            margin-right: auto;
         }
 
 
 
 
+        
 
 
-        .arrow {
-            /* display: none; */
-            opacity: 0;
-            width: 40px;
-            height: 40px;
-            border-radius: 5px;
-            margin: 0px;
-            z-index: 200;
-            /* color: red; */
-            background-color: rgba(19, 19, 19, 0.886);
 
-            top: 550px;
 
-            display: inline-block;
-            text-align: center;
-            vertical-align: middle;
-            transition: opacity cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
-
-
-
-
-
-
-        }
-
-
-        .arrow i {
-            line-height: 40px;
-
-            /* background: red; */
-            color: honeydew;
-
-
-
-            font-size: 30px;
-
-        }
-
-        .arrow.left {
-
-            left: 50px;
-
-        }
-
-        .right {
-
-            right: 50px;
-
-        }
-
-        .banner:hover .arrow {
-            /* display: inline-block; */
-            opacity: 1;
-
-
-
-        }
-
-        .banner img {
-            display: none;
-        }
-
-
-        img.active {
-            display: block;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        /* event-area */
-        .cardpic {
-
-            width: calc(100% * 4 / 10);
-
-        }
-
-        .cardtextwrap {
-
-            width: calc(100% * 6 / 10);
-        }
-
-
-        .cardpic img {
-            width: 100%;
-        }
-
-
-        .cardtitle {
-            font-size: 2em;
-        }
-
-        .carditems {
-            width: 50%;
-
-        }
-
-
-        a.text-red {
-            color: red;
-        }
-
-
-
-        .cardtitle a.text-red:hover {
-
-
-            text-decoration: underline solid black;
-
-        }
-
-        .carditems>.cardpic:hover .carditems>.cardtitle {
-            text-decoration: underline solid black;
-
-        }
-
-
-
-
-        /* 共同style */
+        /* 共同style start*/
         /* footer */
 
         .footer {
@@ -486,55 +377,93 @@
 
 
             <div class="content-wrapper">
-                <div class="banner pt-2 postion-relative">
-                    <div class="imgs w-100 pb-2 mt-1">
-                        <a href="#"><img src="SCOTT_2020_mainbanner_02.jpg" class="w-100 active" alt=""></a>
-                        <a href="#"><img src="SCOTT_2020_mainbanner_03_eyewear.jpg" class="w-100" alt=""></a>
-                        <a href="#"><img src="SCOTT_2020_mainbanner_01.jpg" class="w-100 " alt=""></a>
-                        <a href="#"><img src="SCOTT_2020_mainbanner_04.jpg" class="w-100" alt=""></a>
-                        <a href="#"><img src="SCOTT_2020_mainbanner_05.jpg" class="w-100" alt=""></a>
 
 
+                <!-- main page start MTB -->
 
-
-
-                    </div>
-                    <div class="arrow right position-absolute ">
-                        <i class="fa fas fas fas fa-chevron-right  "></i>
-
-                    </div>
-                    <div class="arrow left position-absolute ">
-                        <i class="fa fas fas fas fa-chevron-left  "></i>
-
-                    </div>
-
-
-
-
+                <div class="page-banner my-2">
+                    <img src="mtb-banner-2019.jpg" alt="" class="w-100">
                 </div>
 
-
-
-                <div class="info-area pt-3 pb-5">
-                    <div class="row m-0 no-wrap">
-                        <div class="col-4 m-0 ">
-                            <img src="foil_470x260_W22017.png" class="w-100" alt="" srcset="">
-                        </div>
-                        <div class="col-4 m-0 ">
-                            <img src="Yearsfor60_Banner_1.png" class="w-100" alt="" srcset="">
-                        </div>
-                        <div class="col-4 m-0 ">
-                            <img src="CarbonExpert_Banner_1.jpg" class="w-100" alt="" srcset="">
-                        </div>
-                    </div>
+                <div class="page-title mt-4">
+                    <div class="ml-3">登山車</div>
                 </div>
 
-
-                <div class="helmets pb-4">
-                    <div class="row m-0">
-                        <img src="helmets-banner.png" class="mx-auto pb-5  " alt="" srcset="">
+                <div class="page-menu">
+                    <div class="pagewrap d-flex">
+                        <div class="pageitem inline-block">
+                            <img src="1scale-rc-900-world-cup-axs-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SCALE RC 900 WORLD CUP AXS</a>
+                            </div>
+                        </div>
+                        <div class="pageitem pageitem-center">
+                            <img src="2scale-rc-900-pro-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SCALE RC 900 PRO</a>
+                            </div>
+                        </div>
+                        <div class="pageitem">
+                            <img src="3scale-930-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SCALE 930</a>
+                            </div>
+                        </div>
                     </div>
+                    <div class="pagewrap d-flex">
+                        <div class="pageitem">
+                            <img src="4scale-940-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SCALE 940</a>
+                            </div>
+                        </div>
+                        <div class="pageitem pageitem-center">
+                            <img src="5spark-rc-900-world-cup-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SPARK RC 900 WORLD CUP</a>
+                            </div>
+                        </div>
+                        <div class="pageitem">
+                            <img src="6spark-rc-900-team-issue-axs-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SPARK RC 900 TEAM ISSUE AXS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagewrap d-flex">
+                        <div class="pageitem">
+                            <img src="7spark-930-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SPARK 930</a>
+                            </div>
+                        </div>
+                        <div class="pageitem pageitem-center">
+                            <img src="8spark-700-pro-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">SPARK 700 PRO</a>
+                            </div>
+                        </div>
+                        <div class="pageitem">
+                            <img src="9contessa-spark-rc-900-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">CONTESSA SPARK RC 900</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="pagewrap d-flex">
+                        <div class="pageitem">
+                            <img src="9contessa-spark-rc-900-2020_m.jpg" alt="">
+                            <div class="pitemTitle text-center">
+                                <a href="#">GENIUS 960
+                                </a>
+                            </div>
+                        </div>
+                    </div> 
                 </div>
+
+                <!-- main page start MTB -->
+                
 
                 <!-- 共同部分 8圖片 start-->
                 <div class="product-area bg-dark">
@@ -561,51 +490,7 @@
                 <!-- 共同部分 8圖片 end-->
 
 
-                <!-- evevt-area start-->
-                <div class="event-area p-0 pb-3 m-0 d-flex ">
-
-                    <div class="carditems d-flex ">
-
-                        <div class="cardpic">
-                            <img src="10489117_1269118738-copy.jpg" class="w-100" alt="" srcset="">
-                        </div>
-                        <div class="cardtextwrap d-flex flex-column  p-2">
-                            <div class="cardtitle text-danger">
-                                2020/08/28 荷蘭一姐Annemiek奪下2020歐洲公路冠軍頭銜
-                            </div>
-                            <div class="cardtext text-secondary">
-                                VAN VLEUTEN CONTINUES WINNING WITH STUNNING STRADE BIANCHE VICTORY Sat 01 Aug 2020
-                                現任女子公路世界冠軍Annemiek van Vleuten (安妮米克‧馮‧佛倫坦)
-                                在上週末贏得了她在2020年度的第5場勝利，就在義大利的Siena舉辦的頂尖UCI
-                                World Tour等級賽事Strade Bianche (白沙戰) 中捍衛了她的冠軍頭銜。 這場比賽在炎熱的氣候下舉行，參賽者們要面對的是春...
-                            </div>
-
-                        </div>
-
-
-                    </div>
-
-                    <div class="carditems d-flex">
-                        <div class="cardpic">
-                            <img src="116841398_3353161564735682_2621951223326374588_o.jpg" class="w-100" alt=""
-                                srcset="">
-                        </div>
-                        <div class="cardtextwrap d-flex flex-column p-2">
-                            <div class="cardtitle text-danger">
-                                2020/08/01 荷蘭一姐Annemiek贏得Strade Bianche 2020白沙戰女子冠軍
-                            </div>
-                            <div class="cardtext text-secondary">
-                                VAN VLEUTEN CONTINUES WINNING WITH STUNNING STRADE BIANCHE VICTORY Sat 01 Aug 2020
-                                現任女子公路世界冠軍Annemiek van Vleuten (安妮米克‧馮‧佛倫坦)
-                                在上週末贏得了她在2020年度的第5場勝利，就在義大利的Siena舉辦的頂尖UCI
-                                World Tour等級賽事Strade Bianche (白沙戰) 中捍衛了她的冠軍頭銜。 這場比賽在炎熱的氣候下舉行，參賽者們要面對的是春...
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-                <!-- evevt-area end-->
+                
             </div>
 
 
