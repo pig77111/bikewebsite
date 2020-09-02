@@ -68,19 +68,41 @@
             height: 24px;
         }
 
+        /* 首頁部分 字亮 */
         .span.nav-link {
-            color: white !important;
+            /* color: #ffffff !important; */
 
         }
-
+        /* 首頁之外的nav-link */
         .nav-link {
+            /* 原本字灰 */
+
             color: rgb(232, 230, 230) !important;
-            transition: color cubic-bezier(0.19, 1, 0.22, 1) 1s;
+            /* color: rgb(240, 147, 9) !important; */
+            /* transition: color cubic-bezier(0.19, 1, 0.22, 1) 1s; */
+            /* transition: background-color 1.5s 0.5s; */
+            /* transition: color 0s 0s; */
+
+            /* -webkit-transition:   color 0s 0s; */
+            -webkit-transition:   1s 0.5s;
         }
 
         .nav-link:hover {
-            color: white !important;
+            color: #fff!important;
+            background-color:#258eff!important;
+            
         }
+
+
+
+        /* 除了首頁之外，字碰到變亮 */
+        a.link-bg-dark:hover{
+            
+            /* color: #fff; */
+            
+        }
+
+        
 
         .underline:focus {
             text-decoration-line: underline;
@@ -101,10 +123,11 @@
         }
 
 
-
+        /* 本頁標籤 字影＋藍底白字 */
         .active-text-shadow {
             text-shadow: 1px 1px black;
-            background-color:#258eff;
+            background-color:#258eff!important;
+            color:white!important
         }
 
         .navbar-nav > li:hover{
@@ -117,14 +140,19 @@
             background-color: #258eff;
         }
 
-
+        /* 下拉navbar寬 字白 */
         .dropdown-item {
             color: white;
             width: 200px;
         }
 
+        .dropdown-item-active{
+            background-color: #000000;
+        }
+        
         .dropdown-item:hover {
-            background-color: #ff7525;
+            background-color: #2cff25;
+            background-color: red;
             color: white;
             transition: background-color cubic-bezier(0.175, 0.885, 0.32, 1.275) 1.2s;
             /* font-size: 1em!important; */
@@ -270,13 +298,13 @@
                     </li>
 
                     <li class="biketab nav-item dropdown mx-1 ">
-                        <a class="nav-link dropdown-toggle  bg-dark underline " href="#" id="navbarDropdown"
+                        <a class="sapn nav-link dropdown-toggle  link-bg-dark underline " href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             最新車款
                         </a>
                         <div class="dropdown-menu p-0 m-0 bg-secondary border-0 rounded-0"
                             aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item py-2 ml-0 pl-2 " href="#">登山車</a>
+                            <a class="dropdown-item dropdown-item-active py-2 ml-0 pl-2 " href="#">登山車</a>
                             <div class="dropdown-divider p-0 m-0"></div>
                             <a class="dropdown-item py-2 ml-0 pl-2 " href="#">公路車</a>
                             <div class="dropdown-divider p-0 m-0"></div>
@@ -287,7 +315,7 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             騎士裝備
                         </a>
@@ -312,7 +340,7 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             技術支援
                         </a>
@@ -327,21 +355,21 @@
                         </div>
                     </li>
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             活動新聞
                         </a>
 
                     </li>
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             經銷門市
                         </a>
 
                     </li>
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline E-font" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline E-font" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             NO SHORTCUTS
                         </a>
@@ -349,7 +377,7 @@
                     </li>
 
                     <li class="biketab nav-item dropdown mx-1">
-                        <a class="nav-link dropdown-toggle active bg-dark underline" href="#" id="navbarDropdown"
+                        <a class="nav-link dropdown-toggle active link-bg-dark underline" href="#" id="navbarDropdown"
                             role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             資訊下載
                         </a>
